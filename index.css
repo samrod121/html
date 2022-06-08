@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@1,200&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Spectral', serif;
+    font-size: 1.5rem;
+    background-color: #ffd6ff;
+    width: 980px;
+    height: 100vh;
+    margin: 0 auto;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 2.5rem;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:1rem;
+}
+
+.banner-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.banner{
+    width: 100%;
+    max-height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin-top:1rem;
+}
+.well-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1em;
+    height:200px;
+}
+.well{
+    margin: 1rem;
+}
+
+.here{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.welcome{
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.content-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1em;
+    height: 500px;
+}
+
+.content{
+    margin: 1rem;
+    height:290px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box{
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+
+.box-one-image{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box-two-image{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box-three-image{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.thank-you{
+    text-align: center;
+}
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.bible-verse-wrapper{
+    font-size: 1.5rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align:right;
+}
+
+.verse{
+    font-size: 1.25rem;
+}
+
+.bible-verse{
+    font-size: 1.5rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    height: 150px;
+}
+
+.contact-section{
+    display: flex;
+  justify-content: space-between;
+}   
+
+.copy-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: center;
+}
