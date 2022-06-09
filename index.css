@@ -1,208 +1,295 @@
-@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@1,200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Spectral:ital,wght@1,200&display=swap");
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+header,
+hgroup,
+menu,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
-    font-family: 'Spectral', serif;
-    font-size: 1.5rem;
-    background-color: #ffd6ff;
-    width: 980px;
-    height: 100vh;
-    margin: 0 auto;
+  line-height: 1;
+  font-family: "Spectral", serif;
+  font-size: 1.5rem;
+  background-color: #ffcad4;
+  /* width: 960px; */
+  height: 100vh;
+  margin: 0;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-.title{
-    text-align: center;
-    margin-bottom: 1em;
-    font-size: 2.5rem;
-    height: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin:1rem;
+.title {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 2.5rem;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem;
 }
 
-.banner-wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 1em;
+.banner-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1em;
 }
 
-.banner{
-    width: 100%;
-    max-height: 500px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-    overflow: hidden;
-    margin-top:1rem;
-}
-.well-wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 1em;
-    height:200px;
-}
-.well{
-    margin: 1rem;
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 
-.here{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 1em;
-    text-align: center;
+.nav-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 1em;
 }
 
-.welcome{
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    text-align: center;
+.nav-link {
+  height: 100%;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #000;
+  text-decoration: underline;
 }
 
-.content-wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 1em;
-    height: 500px;
+.banner {
+  width: 960px;
+  max-height: 400px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+.well-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 350px;
+  background-color: #9d8189;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  font-size: 1.5rem;
+  border: 5px solid #fff;
+}
+.well {
+  margin: 1rem;
 }
 
-.content{
-    margin: 1rem;
-    height:290px;
-    display: flex;
-    justify-content: space-around;
+.here {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1em;
+  text-align: center;
 }
 
-.box{
-    width: 30%;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-    overflow: hidden;
-    margin-bottom: 1em;
+.welcome {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
-.box-one-image{
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+#gallery {
+  width: 960px;
+  height: 100%;
+  border-radius: 10px;
 }
 
-.box-two-image{
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.gallery-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 960px;
+  width: 100%;
 }
 
-.box-three-image{
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.content-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: #d8e2dc;
+  height: 450px;
+  border: 5px solid #fff;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
-.thank-you{
-    text-align: center;
+.slider-image {
+  width: 90%;
+  height: 450px;
 }
 
-.footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    right: 0;
+#footer {
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #d8e2dc;
+  height: 90px;
+  margin-top: 1rem;
 }
 
-.bible-verse-wrapper{
-    font-size: 1.5rem;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    text-align:right;
+.bible-verse-wrapper {
+  font-size: 1.5rem;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: right;
 }
 
-.verse{
-    font-size: 1.25rem;
+.verse {
+  font-size: 1.25rem;
+  text-align: right;
+  margin-right: 2rem;
+  margin-top: 1rem;
 }
 
-.bible-verse{
-    font-size: 1.5rem;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    text-align: center;
-    height: 150px;
-}
-
-.contact-section{
-    display: flex;
+.contact-section {
+  display: flex;
   justify-content: space-between;
-}   
-
-.copy-right{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  align-items: center;
 }
 
-.contact-info{
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    justify-content: center;
+.copy-right {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  justify-content: center;
+  text-decoration: none;
+  margin: 1rem;
 }
