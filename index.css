@@ -198,9 +198,12 @@ table {
 }
 .well {
   margin: 1rem;
+  font-weight: bold;
 }
 
 .here {
+  font-weight: bold;
+
   display: flex;
   justify-content: center;
   align-items: center;
