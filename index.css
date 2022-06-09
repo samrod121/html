@@ -109,9 +109,9 @@ body {
   font-family: "Spectral", serif;
   font-size: 1.5rem;
   background-color: #ffcad4;
-  /* width: 960px; */
+  width: 960px;
   height: 100vh;
-  margin: 0;
+  margin: 0 auto;
 }
 ol,
 ul {
@@ -203,7 +203,6 @@ table {
 
 .here {
   font-weight: bold;
-
   display: flex;
   justify-content: center;
   align-items: center;
